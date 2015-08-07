@@ -9,4 +9,4 @@
  * @providesModule React
  */
 
-module.exports = require('react');
+module.exports = require('react-for-atom');

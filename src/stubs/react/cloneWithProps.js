@@ -9,4 +9,12 @@
  * @providesModule cloneWithProps
  */
 
-module.exports = require('react/lib/cloneWithProps');
+// As per https://github.com/facebook/fixed-data-table/issues/233, this file should be eliminated
+// and all uses of cloneWithProps() should be replaced with React.cloneElement().
+
+if (global.atom) {
+  // In react-for-atom, addons is exposed lazily, by default.
+  module.exports = require('./React').addons.cloneWithProps;
+} else {
+  module.exports = require('react/lib/cloneWithProps');
+}

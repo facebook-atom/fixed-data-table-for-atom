@@ -3,9 +3,6 @@
   "version": "0.4.3",
   "description": "A React table component designed to allow presenting thousands of rows of data.",
   "main": "main.js",
-  "peerDependencies": {
-    "react": ">=0.13.0 <0.14.0"
-  },
   "devDependencies": {
     "autoprefixer": "^5.0.0",
     "babel-core": "^5.4.7",
